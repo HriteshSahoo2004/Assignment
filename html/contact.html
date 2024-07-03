@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWE 2K23</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    </head>
+<body style="background-color:whitesmoke;">
+    <header>
+        <nav>
+            <img src="../WWE_logo.jpg" alt="logo" class="logo" style="width: 100px; height: 100px;" >
+            <a href="mainpage.html" class="site-name"><P>WWE 2K23</p></a>
+            <a href="contact.html"><p style="font-size: xx-large;">CONTACT</p></a>
+         </nav>
+    </header>
+    <div class="container">
+        <div class="container" style="text-align: center; background-color: rgb(139, 59, 142);">
+            WELCOME TO WWE 2K23
+        </div><br>
+        <div>
+            WWE 2K23 is a 2023 professional wrestling sports video game developed by Visual Concepts and published by 2K. It is the twenty-third overall installment of the video game series based on WWE, the ninth game under the WWE 2K banner, and the successor to WWE 2K22. It was released on March 14, 2023, for PlayStation 4, PlayStation 5, Windows, Xbox One, and Xbox Series X/S.
+        </div><br>
+        <div>
+            FORM
+            <br><br>
+            <form action = "javascript:submitForm()" onSubmit = "return validate()">
+                <table class="table" >
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" id="name" name="name" placeholder="e.g Hritesh" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" placeholder="xyz@gmail.com" required><span id="emailerr"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="genre">Favorite genre:</label></td>
+                        <td><input list="genre" name="genre" id="genre" placeholder="tap to see" required></td>
+                    </tr>
+                        <datalist id="genre">
+                            <option value="RAW"></option>
+                            <option value="SMACK DOWN"></option>
+                            <option value="NXT"></option>
+                            <option value="HELL IN A CELL"></option>
+                            <option value="MONEY IN THE BANK"></option>
+                        </datalist>
+                </table>
+                <br>
+                <input type="checkbox" id="myCheckbox" name="myCheckbox" checked value="yes" required>
+                <label for="myCheckbox">Subscribe  to get updated about the new episodes.</label>
+                <br><br>
+                <input type="submit" name="submit" value="Submit" style="align-items: center;" >
+
+            </form>
+            <script src="../javascript/contact.js"></script>
+        </div>
+    
+
+    </div>
+    <div class="footer-text">
+		<p>All rights are reserved</p>
+	</div>
+</body>
+</html>
